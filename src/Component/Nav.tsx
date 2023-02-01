@@ -24,15 +24,16 @@ function Nav() {
   
   return (
     <>
-     <React.Fragment>
-      <chakra.header
-        bg={bg}
+     <React.Fragment >
+      <chakra.header 
+         bg="#0A244F"
         w="full"
         px={{ base: 2, sm: 4 }}
         py={4}
         shadow="md"
+        
       >
-        <Flex alignItems="center" justifyContent="space-between" mx="auto">
+        <Flex alignItems="center" justifyContent="space-between" mx="auto" >
           <Flex>
             <chakra.a
               href="/"
@@ -41,10 +42,10 @@ function Nav() {
               alignItems="center"
             >
               {/* <Logo /> */}
-              <VisuallyHidden>Choc</VisuallyHidden>
+              <VisuallyHidden>Tourism</VisuallyHidden>
             </chakra.a>
-            <chakra.h1 fontSize="xl" fontWeight="medium" ml="2">
-              Choc
+            <chakra.h1 color='white' fontSize="xl" fontWeight="medium" ml="2">
+            Tourism
             </chakra.h1>
           </Flex>
           <HStack display="flex" alignItems="center" spacing={1}>
@@ -56,14 +57,14 @@ function Nav() {
             >
                 
                 <Link href='' isExternal>
-              <Button variant="ghost">Features</Button>
+              <Button variant="ghost" color='white'>Features</Button>
                 </Link>
-              <Button variant="ghost">Pricing</Button>
-              <Button variant="ghost">Blog</Button>
-              <Button variant="ghost">Company</Button>
-              <Button variant="ghost">Sign in</Button>
+              <Button variant="ghost" color='white'>Pricing</Button>
+              <Button variant="ghost" color='white'>Blog</Button>
+              <Button variant="ghost" color='white'>Company</Button>
+              <Button variant="ghost" color='white'>Sign in</Button>
             </HStack>
-            <Button colorScheme="brand" size="sm">
+            <Button color='white' colorScheme="brand" size="sm">
               Get Started
             </Button>
             <Box display={{ base: "inline-flex", md: "none" }}>
@@ -98,19 +99,19 @@ function Nav() {
                   onClick={mobileNav.onClose}
                 />
 
-                <Button w="full" variant="ghost">
+                <Button color='white' w="full" variant="ghost">
                   Features
                 </Button>
-                <Button w="full" variant="ghost">
+                <Button color='white' w="full" variant="ghost">
                   Pricing
                 </Button>
-                <Button w="full" variant="ghost">
+                <Button color='white' w="full" variant="ghost">
                   Blog
                 </Button>
-                <Button w="full" variant="ghost">
+                <Button color='white' w="full" variant="ghost">
                   Company
                 </Button>
-                <Button w="full" variant="ghost">
+                <Button color='white' w="full" variant="ghost">
                   Sign in
                 </Button>
               </VStack>

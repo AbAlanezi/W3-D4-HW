@@ -19,7 +19,7 @@ import {
 function Footer() {
   return (
     <div>
-        <Box bg="white" _dark={{ bg: "gray.600" }}>
+        <Box mt='5' bg="#0A244F" _dark={{ bg: "gray.600" }}>
       <Stack
         direction={{ base: "column", lg: "row" }}
         w="full"
@@ -46,12 +46,12 @@ function Footer() {
           textAlign={{ base: "center", md: "left" }}
         >
           <Flex justify="start" direction="column">
-            <Link textTransform="uppercase">Pre-Sale FAQS</Link>
-            <Link textTransform="uppercase">Submit a ticket</Link>
+            <Link textTransform="uppercase" color='white'>Pre-Sale FAQS</Link>
+            <Link textTransform="uppercase" color='white'>Submit a ticket</Link>
           </Flex>
           <Flex justify="start" direction="column">
-            <Link textTransform="uppercase">Services</Link>
-            <Link textTransform="uppercase">Theme Tweak</Link>
+            <Link textTransform="uppercase" color='white'>Services</Link>
+            <Link textTransform="uppercase" color='white'>Theme Tweak</Link>
           </Flex>
         </HStack>
         <HStack
@@ -64,21 +64,21 @@ function Footer() {
           textAlign={{ base: "center", md: "left" }}
         >
           <Flex justify="start" direction="column">
-            <Link textTransform="uppercase">Show Case</Link>
-            <Link textTransform="uppercase">Widget Kit</Link>
-            <Link textTransform="uppercase">Support</Link>
+            <Link textTransform="uppercase" color='white'>Show Case</Link>
+            <Link textTransform="uppercase" color='white'>Widget Kit</Link>
+            <Link textTransform="uppercase" color='white'>Support</Link>
           </Flex>
           <Flex justify="start" direction="column">
-            <Link textTransform="uppercase">About Us</Link>
-            <Link textTransform="uppercase">Contact Us</Link>
-            <Link textTransform="uppercase">Resources</Link>
+            <Link textTransform="uppercase" color='white'>About Us</Link>
+            <Link textTransform="uppercase" color='white'>Contact Us</Link>
+            <Link textTransform="uppercase" color='white'>Resources</Link>
           </Flex>
         </HStack>
       </Stack>
       <Divider
         w="95%"
         mx="auto"
-        color="gray.600"
+        color='white'
         _dark={{ color: "#F9FAFB" }}
         h="3.5px"
       />
@@ -86,7 +86,7 @@ function Footer() {
         <HStack justify="center">
           <Link href='https://www.facebook.com/' isExternal>
             <Icon
-              color="gray.800"
+              color='white'
               _dark={{ color: "white" }}
               h="20px"
               w="20px"
@@ -95,7 +95,7 @@ function Footer() {
           </Link>
           <Link href='https://twitter.com/' isExternal>
             <Icon
-              color="gray.800"
+              color='white'
               _dark={{ color: "white" }}
               h="20px"
               w="20px"
@@ -104,23 +104,24 @@ function Footer() {
           </Link>
           <Link href='https://Instagram.com/' isExternal>
             <Icon
+            color='white'
               _dark={{ color: "white" }}
               h="20px"
               w="20px"
               as={GrInstagram}
             />
           </Link>
-          <Link>
+          <Link >
             <Icon
               _dark={{ color: "white" }}
               h="0px"
               w="20px"
-              as={FaLinkedinIn}
+              as={FaLinkedinIn}color='white'
             />
           </Link>
         </HStack>
 
-        <Text textAlign="center" fontSize="smaller" _dark={{ color: "white" }}>
+        <Text textAlign="center" fontSize="smaller" _dark={{ color: "white" }} color='white'>
           &copy;Copyright. All rights reserved.
         </Text>
       </VStack>
