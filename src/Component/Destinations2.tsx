@@ -14,8 +14,8 @@ function Destinations2() {
         <div className='card-up'>
          <h1 className='h1-card-up-2'>AND OUR DESTINATIONS</h1>
         </div>
-        <SimpleGrid columns={3} spacingX='40px' spacingY='20px'  bgImage={line}>
-      <Card maxW='sm' margin={10} maxH='0'>
+        <SimpleGrid  columns={3} spacingX='40px' spacingY='20px'  >
+      <Card maxW='sm' margin={10} maxH='0' h={'30'}>
   <CardBody>
     <Image height={340}
     
@@ -42,7 +42,7 @@ function Destinations2() {
   </CardFooter>
 </Card>
 
-<Card maxW='sm' margin={10} maxH='0'>
+<Card maxW='sm' margin={10} maxH='0'  h={'30'}>
   <CardBody>
     <Image height={340}
       src={card2}
@@ -50,9 +50,9 @@ function Destinations2() {
       borderRadius='lg'
       />
     <Stack mt='1' spacing='4'>
-      <Heading size='md' color='white'>UNFORGETTABLE EXPERIENCE ALONGIDE UNIQUE PEIPLE</Heading>
+      <Heading size='md' color='white'>UNFORGETTABLE EXPERIENCE</Heading>
       <p className='p-card'>
-      the main constant across Colombia's hugely diverse regions is the warmth you'll be welcomed with in each and every one of them.
+      the main constant across Colombia's hugely diverse regions is the warmth you'll be welcomed with in each.
       </p>
 
     </Stack>

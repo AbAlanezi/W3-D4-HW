@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 
 import {
   chakra,
@@ -12,7 +13,7 @@ import {
   VStack,
   IconButton,
   CloseButton,
-  Link,
+  
 } from "@chakra-ui/react";
 import { AiOutlineMenu } from "react-icons/ai";
 // import { Logo } from "@choc-ui/logo";
@@ -56,15 +57,14 @@ function Nav() {
               display={{ base: "none", md: "inline-flex" }}
             >
                 
-                <Link href='' isExternal>
-              <Button variant="ghost" color='white'>Features</Button>
-                </Link>
-              <Button variant="ghost" color='white'>Pricing</Button>
-              <Button variant="ghost" color='white'>Blog</Button>
-              <Button variant="ghost" color='white'>Company</Button>
-              <Button variant="ghost" color='white'>Sign in</Button>
+           
+              <Button variant="ghost" color='white' _hover={{ textColor: "#000",bg:"#fff" }}>Features</Button>
+              <Button variant="ghost" color='white' _hover={{ textColor: "#000",bg:"#fff" }}>Pricing</Button>
+              <Button variant="ghost" color='white' _hover={{ textColor: "#000",bg:"#fff" }}>Blog</Button>
+              <Button variant="ghost" color='white'_hover={{ textColor: "#000",bg:"#fff" }}>Company</Button>
+              <Button variant="ghost" color='white' _hover={{ textColor: "#000",bg:"#fff" }}>Sign in</Button>
             </HStack>
-            <Button color='white' colorScheme="brand" size="sm">
+            <Button _hover={{ textColor: "#000",bg:"#fff" }} color='white' colorScheme="brand" size="sm">
               Get Started
             </Button>
             <Box display={{ base: "inline-flex", md: "none" }}>
@@ -99,19 +99,19 @@ function Nav() {
                   onClick={mobileNav.onClose}
                 />
 
-                <Button color='white' w="full" variant="ghost">
+                <Button _hover={{ textColor: "#000",bg:"#fff" }} color='black' w="full" variant="ghost">
                   Features
                 </Button>
-                <Button color='white' w="full" variant="ghost">
+                <Button _hover={{ textColor: "#000",bg:"#fff" }} color='black' w="full" variant="ghost">
                   Pricing
                 </Button>
-                <Button color='white' w="full" variant="ghost">
+                <Button _hover={{ textColor: "#000",bg:"#fff" }} color='black' w="full" variant="ghost">
                   Blog
                 </Button>
-                <Button color='white' w="full" variant="ghost">
+                <Button _hover={{ textColor: "#000",bg:"#fff" }} color='black' w="full" variant="ghost">
                   Company
                 </Button>
-                <Button color='white' w="full" variant="ghost">
+                <Button _hover={{ textColor: "#000",bg:"#fff" }} color='white' w="full" variant="ghost">
                   Sign in
                 </Button>
               </VStack>
